@@ -1,5 +1,6 @@
 import { Header } from "./components/Header";
 import { Page, usePage } from "./contexts/Page";
+import { ArticleIndex } from "./pages/Article";
 
 const App = () => {
   const { page } = usePage();
@@ -7,7 +8,7 @@ const App = () => {
   const renderSwitch = () => {
     switch (page) {
       case Page.Articles:
-        return <div>Articles</div>;
+        return <ArticleIndex />;
       case Page.Authors:
         return <div>AUthors</div>;
       default:

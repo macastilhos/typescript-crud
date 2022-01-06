@@ -1,4 +1,3 @@
-import { NumericLiteral } from "typescript";
 
 export interface Record {
   id?: number
